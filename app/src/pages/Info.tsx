@@ -8,8 +8,10 @@ import { ICartItem } from '../models/ICartItem';
 
 
 interface InfoProps {
-  cartItems: ICartItem[];
+  // cartItems: ICartItem[];
   totalPrice: string;
+  cartItems?: ICartItem[]; // Optional prop
+
 }
 
 export default function Info({ cartItems, totalPrice }: InfoProps) {
@@ -22,7 +24,8 @@ export default function Info({ cartItems, totalPrice }: InfoProps) {
         {totalPrice}
       </Typography>
       <List disablePadding>
-        {cartItems.map((item) => (
+        { 
+        cartItems?.map((item) => (
           <ListItem key={item.title} sx={{ py: 1, px: 0 }}>
             <ListItemText
               sx={{ mr: 2 }}

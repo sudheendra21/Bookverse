@@ -28,3 +28,5 @@ export const createBook = (request: IBookInfo) =>
 
 export const updateBook = (id: string, request: IBookRequest) =>
   api.put(`${baseURL}/${id}`, request).then((response) => response.data);
+
+export type { IBookInfo };

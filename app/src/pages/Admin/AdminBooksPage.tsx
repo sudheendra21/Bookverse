@@ -94,7 +94,7 @@ const AdminBooksPage: React.FC = () => {
             <Card style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
               <CardContent>
                 <Typography variant="h6">{book.title}</Typography>
-                <Typography variant="subtitle1">Author: {book.author}</Typography>
+                <Typography variant="subtitle1">Author: {book.authors}</Typography>
                 <Typography>Year: {book.year}</Typography>
                 <Typography>Price: ${book.price ? book.price.toFixed(2) : "N/A"}</Typography>
               </CardContent>
@@ -128,7 +128,7 @@ const AdminBooksPage: React.FC = () => {
                 label="Author"
                 variant="outlined"
                 fullWidth
-                value={selectedBook.author || ""}
+                value={selectedBook.authors || ""}
                 onChange={(e) => handleInputChange("author", e.target.value)}
                 style={{ marginBottom: "16px" }}
               />
@@ -154,7 +154,7 @@ const AdminBooksPage: React.FC = () => {
                 label="Image Link"
                 variant="outlined"
                 fullWidth
-                value={selectedBook.imageLink || ""}
+                value={selectedBook.image_url || ""}
                 onChange={(e) => handleInputChange("imageLink", e.target.value)}
                 style={{ marginBottom: "16px" }}
               />

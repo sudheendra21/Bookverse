@@ -1,7 +1,7 @@
 export interface IBookInfo {
     id: string;
     isbn: string;
-    // authors: [{'author_id': string, 'role': string}];
+  //  authors: [{'author_id': string, 'role': string}];
     authors: string;
     country: string;
     image_url: string;

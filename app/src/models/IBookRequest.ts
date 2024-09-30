@@ -1,7 +1,7 @@
 export interface IBookRequest {
-    author: string;
+    authors: string;
     country: string;
-    imageLink: string;
+    image_url: string;
     language: string;
     title: string;
     year: number;

@@ -29,7 +29,7 @@ export default function InfoMobile({ totalPrice }: InfoProps) {
       >
         <CloseIcon />
       </IconButton>
-      <Info totalPrice={totalPrice} />
+      <Info totalPrice={totalPrice}  />
     </Box>
   );
 
